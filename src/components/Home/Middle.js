@@ -11,7 +11,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -35,23 +34,41 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '2rem',
         fontFamily: 'Nunito',
         fontWeight:'600',
-        margin:'30px',
+        marginBottom:'7%',
+    },
+    cardText:{
+        color: '#151515',
+        textAlign:'center',
+        fontFamily: 'Nunito',
+        fontSize: '1.5rem',
+        fontWeight:'300',
     },
     middle:{
-        backgroundColor:'#005A00',
+        backgroundColor:'#003e00',
         minHeight:'100px',
     },
     description:{
         color:'#fff',
         fontFamily:'Nunito',
-        fontWeight:'600',
+        fontWeight:'400',
         margin:'2%',
-        padding:'1%',
+        padding:'5%',
     },
     media: {
         height: 540,
-        width:'45%',
+        width:'40%',
+        margin:'auto',
+        textAlign:'center',
       },
+    downBtn:{
+        '& > *': {
+            margin: theme.spacing(1),
+            color:'#fff',
+            width:'80%',
+            borderRadius: 20,
+            border: "1px solid #fff",
+          },
+    },
   }));
   
   export default function Middle() {
@@ -62,7 +79,7 @@ const useStyles = makeStyles((theme) => ({
       <CssBaseline />
       <Container maxWidth="m">
         <div className={classes.heading}>
-        Best Marketplace For Your Organic and Surplus Harvest
+            <h2>Best Marketplace For Your Organic and Surplus Harvest</h2>
         </div>
       <div className={classes.root}>
         <Box component="span" m={1}>
@@ -76,19 +93,21 @@ const useStyles = makeStyles((theme) => ({
           title="Grovi Mobile App"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          {/* <Typography gutterBottom variant="h5" component="h2">
           Buy And Sell
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
           Find your organic lifestyle while
 selling what you have in your home garden
-          </Typography>
+          </Typography> */}
+        <div className={classes.cardText}>
+            <h5>Buy And Sell</h5>
+            <h6> Find your organic lifestyle while
+selling what you have in your home garden</h6>
+        </div>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
       </CardActions>
     </Card>
           </Grid>
@@ -101,19 +120,21 @@ selling what you have in your home garden
           title="Grovi Mobile App"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          {/* <Typography gutterBottom variant="h5" component="h2">
           Friendly UI
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
           Access and post advertisements easily.
 Find what you want withinn 10 seconds.
-          </Typography>
+          </Typography> */}
+                  <div className={classes.cardText}>
+            <h5>Friendly UI</h5>
+            <h6>Access and post advertisements easily.
+Find anything withinn 10 seconds.</h6>
+        </div>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
       </CardActions>
     </Card>
           </Grid>
@@ -121,26 +142,30 @@ Find what you want withinn 10 seconds.
         </Box>
       </div>
       <div className={classes.heading}>
-      The Platform Where Growers Meet Customers
+      <h3>The Platform Where Growers Meet Customers</h3>
         </div>
       </Container>
-      {/* <Box component="span" m={1} style={{ height: '10vh', margin: 0, padding: 0 }}>
+      <Box component="span" m={1} style={{ margin: 0, padding: 0 }}>
         <div className={classes.middle}>
-            <Grid container spacing={3}>
+            <Grid container spacing={3} xs={12}>
             <Grid item xs={4}>
-         
+            <img src={process.env.PUBLIC_URL + '../assets/transW.png'} style={{width:'60%', marginLeft:'10%'}}/> 
         </Grid>
         <Grid item xs={8}>
           <div className={classes.description}>
               <h1>GroVi Mobile App</h1>
               <p>Surplus produce happens because of lack of selling opportunities, loss in demand or result of overproduction. There can be a lot of surplus product available 
                   in Sri Lanka without any consumer. Without a buyer, farmers are forced to leave their produce to rot on the farm or on the excess marketplace. Food consumption forecasting is also difficult because supply and demand each other. So we are making a platform for continous demand to supply.</p>
+                  <div className={classes.downBtn}>
+                <Button variant="outlined" onClick={() => { alert('clicked') }}>Download</Button>
+                </div>
           </div>
         </Grid>
             </Grid>
         </div>
-      </Box> */}
-    </React.Fragment>
+      </Box>
+
+      </React.Fragment>
     
     );
   }

@@ -47,11 +47,11 @@ export default function Team() {
         <h2>Meet G<span className={classes.colorText}>rovi </span> Team</h2>
     </div>
     <div className={classes.root}>
-      <Avatar alt="Remy Sharp" src={process.env.PUBLIC_URL + '../assets/anjana.jpg'} className={classes.large} />
-      <Avatar alt="Travis Howard" src={process.env.PUBLIC_URL + '../assets/asindu.jpg'}  className={classes.large} />
-      <Avatar alt="Cindy Baker" src={process.env.PUBLIC_URL + '../assets/ashan.jpg'}  className={classes.large} />
-      <Avatar alt="Cindy Baker" src={process.env.PUBLIC_URL + '../assets/jony.jpg'}  className={classes.large} />
-      <Avatar alt="Cindy Baker" src={process.env.PUBLIC_URL + '../assets/logo.jpg'}  className={classes.large} />
+      <Avatar alt="Anjana" src={process.env.PUBLIC_URL + '../assets/anjana.jpg'} className={classes.large} />
+      <Avatar alt="Asindu" src={process.env.PUBLIC_URL + '../assets/asindu.jpg'}  className={classes.large} />
+      <Avatar alt="Ashan" src={process.env.PUBLIC_URL + '../assets/ashan.jpg'}  className={classes.large} />
+      <Avatar alt="Dimuthu" src={process.env.PUBLIC_URL + '../assets/jony.jpg'}  className={classes.large} />
+      <Avatar alt="Manul" src={process.env.PUBLIC_URL + '../assets/manul.jpg'}  className={classes.large} />
     </div>
     </Container>
   </React.Fragment>

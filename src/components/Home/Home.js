@@ -1,5 +1,4 @@
 import React from 'react'
-import BackToTop from './TopBar'
 import Header from './Header';
 import Middle from './Middle';
 import { makeStyles } from '@material-ui/core';

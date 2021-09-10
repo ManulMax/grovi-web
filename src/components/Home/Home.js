@@ -1,15 +1,16 @@
 import React from 'react'
 import BackToTop from './TopBar'
-import Box from '@material-ui/core/Box';
 import Header from './Header';
+import Middle from './Middle';
 import { makeStyles } from '@material-ui/core';
 import { mergeClasses } from '@material-ui/styles';
 import { CssBaseline } from '@material-ui/core';
+import Footer from '../Footer';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      minHeight: '50vh',
-      backgroundImage: `url(${process.env.PUBLIC_URL + '../assets/cabbage.jpg'})`,
+      maxHeight: '100vh',
+      backgroundImage: `url(${process.env.PUBLIC_URL + '../assets/cab.jpg'})`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
     },
@@ -22,6 +23,8 @@ export default function Home() {
         {/* <BackToTop/> */}
         <Header />
         <CssBaseline />
+        <Middle />
+        <Footer/>
       </div>
     );
   }

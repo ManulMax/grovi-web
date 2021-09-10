@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, IconButton, Toolbar, Collapse } from '@material-ui/core';
-import SortIcon from '@material-ui/icons/Sort';
+import ExitToAppRoundedIcon from '@material-ui/icons/ExitToAppRounded';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link as Scroll } from 'react-scroll';
+import {fadeInDown} from 'react-animations';
+import styled , {keyframes} from 'styled-components';
+
+const Bounce = styled.div`animation: 2s  ${keyframes`${fadeInDown}`} infinite`;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -12,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     height: '100vh',
     fontFamily: 'Nunito',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
   },
   overlay: {
     backgroundColor: 'rgba(0, 0, 0, 0.1)',
@@ -32,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '2rem',
   },
   colorText: {
-    color: '#007200',
+    color: '#009900',
   },
   container: {
     textAlign: 'center',
@@ -42,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '4.5rem',
   },
   goDown: {
-    color: '#007200',
+    color: '#fff',
     fontSize: '4rem',
   },
 }));
@@ -60,7 +64,7 @@ export default function Header() {
             G<span className={classes.colorText}>rovi</span>
           </h1>
           <IconButton>
-            <SortIcon className={classes.icon} />
+            <ExitToAppRoundedIcon className={classes.icon} />
           </IconButton>
         </Toolbar>
       </AppBar>
@@ -77,7 +81,7 @@ export default function Header() {
           </h1>
           <Scroll to="place-to-visit" smooth={true}>
             <IconButton>
-              <ExpandMoreIcon className={classes.goDown} />
+                <Bounce><ExpandMoreIcon className={classes.goDown} /> </Bounce>
             </IconButton>
           </Scroll>
         </div>

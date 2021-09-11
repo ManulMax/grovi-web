@@ -76,7 +76,7 @@ export default function Login() {
           </Avatar>
           <h3>Admin Login</h3>
           <form className={classes.form} noValidate>
-            <TextField
+            <TextField              
               variant="outlined"
               margin="normal"
               required
@@ -88,6 +88,7 @@ export default function Login() {
               autoFocus
             />
             <TextField
+              color="#009900"
               variant="outlined"
               margin="normal"
               required
@@ -99,7 +100,7 @@ export default function Login() {
               autoComplete="current-password"
             />
             <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
+              control={<Checkbox value="remember" style={{color:'#009900'}} />}
               label="Remember me"
             />
             <Button
@@ -107,7 +108,7 @@ export default function Login() {
               fullWidth
               variant="contained"
               className={classes.submit}
-              style={{backgroundColor:'#009900', color:'#fff'}}
+              style={{backgroundColor:'#009900', color:'#fff', borderRadius:'50px'}}
             >
               Sign In
             </Button>

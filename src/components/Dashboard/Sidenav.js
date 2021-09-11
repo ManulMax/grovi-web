@@ -17,6 +17,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
+import Demo from './Saleschart';
+import Grid from '@material-ui/core/Grid';
 
 const drawerWidth = 240;
 
@@ -162,7 +164,22 @@ export default function Sidenav() {
       <main className={classes.content}>
         <div className={classes.toolbar} />
         
-        
+        <Grid container spacing={3}>
+            <Grid item xs={6}>
+            <Demo/>
+            </Grid>
+            <Grid item xs={6}>
+            <Demo/>
+            </Grid>
+        </Grid>
+        <Grid container spacing={3}>
+            <Grid item xs={6}>
+            <Demo/>
+            </Grid>
+            <Grid item xs={6}>
+            <Demo/>
+            </Grid>
+        </Grid>
       </main>
     </div>
   );

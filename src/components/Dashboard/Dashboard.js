@@ -28,7 +28,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+        Grovi Official
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -72,12 +72,16 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButtonHidden: {
     display: 'none',
+    color:'#E8E8E8',
   },
   title: {
     flexGrow: 1,
+    fontFamily: 'Nunito',
+    fontWeight:'400',
   },
   drawerPaper: {
     backgroundColor:'#004B23',
+    color:'#E8E8E8',
     position: 'relative',
     whiteSpace: 'nowrap',
     width: drawerWidth,
@@ -133,7 +137,7 @@ export default function Dashboard() {
     <div className={classes.root}>
       <CssBaseline />
       <AppBar position="absolute" className={clsx(classes.appBar, open && classes.appBarShift)}>
-        <Toolbar className={classes.toolbar} style={{backgroundColor:'#003418'}}>
+        <Toolbar className={classes.toolbar} style={{backgroundColor:'#003418', color:'#E8E8E8'}}>
           <IconButton
             edge="start"
             color="inherit"
@@ -143,9 +147,9 @@ export default function Dashboard() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
+          <h2 noWrap className={classes.title}>
             Welcome Manul
-          </Typography>
+          </h2>
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">
               <NotificationsIcon />
@@ -174,16 +178,16 @@ export default function Dashboard() {
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
-            {/* Chart */}
-            <Grid item xs={12} md={8} lg={9}>
-              <Paper className={fixedHeightPaper}>
-                <Chart />
-              </Paper>
-            </Grid>
             {/* Recent Deposits */}
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
                 <Deposits />
+              </Paper>
+            </Grid>
+            {/* Chart */}
+            <Grid item xs={12} md={8} lg={9}>
+              <Paper className={fixedHeightPaper}>
+                <Chart />
               </Paper>
             </Grid>
             {/* Recent Orders */}

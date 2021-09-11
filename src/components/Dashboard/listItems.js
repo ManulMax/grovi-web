@@ -7,47 +7,61 @@ import DashboardIcon from '@material-ui/icons/Dashboard';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import PeopleIcon from '@material-ui/icons/People';
 import BarChartIcon from '@material-ui/icons/BarChart';
-import LayersIcon from '@material-ui/icons/Layers';
+import WarningIcon from '@material-ui/icons/Warning';
 import AssignmentIcon from '@material-ui/icons/Assignment';
+import PersonAddRoundedIcon from '@material-ui/icons/PersonAddRounded';
+import PowerSettingsNewRoundedIcon from '@material-ui/icons/PowerSettingsNewRounded';
 
 export const mainListItems = (
   <div>
     <ListItem button>
       <ListItemIcon>
-        <DashboardIcon />
+        <DashboardIcon  style={{fill:'#E8E8E8'}}/>
       </ListItemIcon>
       <ListItemText primary="Dashboard" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <ShoppingCartIcon />
+        <ShoppingCartIcon style={{fill:'#E8E8E8'}} />
       </ListItemIcon>
-      <ListItemText primary="Orders" />
+      <ListItemText primary="View Orders" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <PeopleIcon />
+        <PersonAddRoundedIcon style={{fill:'#E8E8E8'}}/>
       </ListItemIcon>
-      <ListItemText primary="Customers" />
+      <ListItemText primary="Add Admin" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <BarChartIcon />
+        <BarChartIcon style={{fill:'#E8E8E8'}}/>
       </ListItemIcon>
       <ListItemText primary="Reports" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <LayersIcon />
+        <WarningIcon style={{fill:'#E8E8E8'}}/>
       </ListItemIcon>
-      <ListItemText primary="Integrations" />
+      <ListItemText primary="Complains" />
+    </ListItem>
+    <ListItem button>
+      <ListItemIcon>
+        <PeopleIcon style={{fill:'#E8E8E8'}}/>
+      </ListItemIcon>
+      <ListItemText primary="Profile" />
     </ListItem>
   </div>
 );
 
 export const secondaryListItems = (
   <div>
-    <ListSubheader inset>Saved reports</ListSubheader>
+    <ListItem button>
+      <ListItemIcon>
+        <PowerSettingsNewRoundedIcon style={{fill:'#E8E8E8'}}/>
+      </ListItemIcon>
+      <ListItemText primary="Logout" />
+    </ListItem>
+    {/* <ListSubheader inset>Saved reports</ListSubheader>
     <ListItem button>
       <ListItemIcon>
         <AssignmentIcon />
@@ -65,6 +79,6 @@ export const secondaryListItems = (
         <AssignmentIcon />
       </ListItemIcon>
       <ListItemText primary="Year-end sale" />
-    </ListItem>
+    </ListItem> */}
   </div>
 );

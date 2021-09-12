@@ -19,7 +19,9 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
-import Chart from './Chart';
+import IncomeChart from './IncomeChart';
+import NewuserChart from './NewuserChart';
+import TotaladsChart from './TotaladsChart';
 import Deposits from './Deposits';
 import Cards from './Cards';
 import Orders from './Orders';
@@ -192,7 +194,7 @@ export default function Dashboard() {
             {/* Chart */}
             <Grid item xs={12} md={8} lg={9}>
               <Paper className={fixedHeightPaper}>
-                <Chart />
+                <IncomeChart/>
               </Paper>
             </Grid>
             {/* Recent Orders */}
@@ -203,7 +205,21 @@ export default function Dashboard() {
             </Grid> */}
           </Grid>
           {/* card grid */}          
-            <Cards/>          
+            <Cards/>
+          <Grid container spacing={3}>
+            {/* new user count */}
+            <Grid item xs={12} md={6} lg={6}>
+              <Paper className={fixedHeightPaper}>
+                <NewuserChart/>
+              </Paper>
+            </Grid>
+            {/* new ad Chart */}
+            <Grid item xs={12} md={6} lg={6}>
+              <Paper className={fixedHeightPaper}>
+                <TotaladsChart/>
+              </Paper>
+            </Grid>
+          </Grid>         
           <Box pt={4}>
             <Copyright />
           </Box>

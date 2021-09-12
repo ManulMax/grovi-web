@@ -20,7 +20,7 @@ const data = [
   createData('', undefined),
 ];
 
-export default function Chart() {
+export default function IncomeChart() {
   const theme = useTheme();
 
   return (

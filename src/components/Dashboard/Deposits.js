@@ -21,20 +21,27 @@ const useStyles = makeStyles({
   depositContext: {
     flex: 1,
   },
+  fontStyle:{
+    fontFamily: 'Nunito',
+    fontWeight:'600',
+    fontSize:'1.5rem',
+    color:'#1a237e',
+  }
 });
 
 export default function Deposits() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Title>Order Revenue</Title>
+      
+      <div className={classes.fontStyle}>Order Revenue</div>
       <Typography component="p" variant="h4">
         $3,024.00
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
         <TodayDate />
       </Typography>
-      <Title>Order Count</Title>
+      <div className={classes.fontStyle}>Order Count</div>
       <Typography component="p" variant="h4">
         25
       </Typography>
@@ -43,6 +50,7 @@ export default function Deposits() {
           View balance
         </Link>
       </div> */}
+      
     </React.Fragment>
   );
 }

@@ -21,6 +21,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
 import Chart from './Chart';
 import Deposits from './Deposits';
+import Cards from './Cards';
 import Orders from './Orders';
 
 function Copyright() {
@@ -116,6 +117,10 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     overflow: 'auto',
     flexDirection: 'column',
+    '&:hover': {
+        background: "#a5d6a7",
+        transition: "background 1s, color 1s",
+     },
   },
   fixedHeight: {
     height: 240,
@@ -191,12 +196,14 @@ export default function Dashboard() {
               </Paper>
             </Grid>
             {/* Recent Orders */}
-            <Grid item xs={12}>
+            {/* <Grid item xs={12}>
               <Paper className={classes.paper}>
                 <Orders />
               </Paper>
-            </Grid>
+            </Grid> */}
           </Grid>
+          {/* card grid */}          
+            <Cards/>          
           <Box pt={4}>
             <Copyright />
           </Box>

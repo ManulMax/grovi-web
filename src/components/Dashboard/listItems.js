@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from '@material-ui/core/Link';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -14,7 +15,7 @@ import PowerSettingsNewRoundedIcon from '@material-ui/icons/PowerSettingsNewRoun
 
 export const mainListItems = (
   <div>
-    <ListItem button>
+    <ListItem button component={Link} href="">
       <ListItemIcon>
         <DashboardIcon  style={{fill:'#E8E8E8'}}/>
       </ListItemIcon>

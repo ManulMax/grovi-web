@@ -6,9 +6,10 @@ import Dashboard from './components/Dashboard/Dashboard';
 function App() {
   return (
     <>
-    {/* <Home/> */}
+    <Home/>
     {/* <Login/> */}
-    <Dashboard/>
+    {/* <Dashboard/> */}
+    {/* < AdminDetails/> */}
     </>
   );
 }

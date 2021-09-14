@@ -6,6 +6,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link as Scroll } from 'react-scroll';
 import {fadeInDown} from 'react-animations';
 import styled , {keyframes} from 'styled-components';
+import Middle from './Middle';
 
 const Bounce = styled.div`animation: 2s  ${keyframes`${fadeInDown}`} infinite`;
 
@@ -63,7 +64,7 @@ export default function Header() {
           <h1 className={classes.appbarTitle}>
             G<span className={classes.colorText}>rovi</span>
           </h1>
-          <IconButton>
+          <IconButton component={Scroll} to="/Middle">
             <ExitToAppRoundedIcon className={classes.icon} />
           </IconButton>
         </Toolbar>
@@ -79,7 +80,7 @@ export default function Header() {
             Welcome to <br />
             G<span className={classes.colorText}>rovi</span>
           </h1>
-          <Scroll to="place-to-visit" smooth={true}>
+          <Scroll to="Middle" smooth={true}>
             <IconButton>
                 <Bounce><ExpandMoreIcon className={classes.goDown} /> </Bounce>
             </IconButton>

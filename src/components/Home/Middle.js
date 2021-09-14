@@ -11,7 +11,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
+import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
     },
     middle:{
         backgroundColor:'#003e00',
-        minHeight:'100px',
+        minHeight:'50vh',
     },
     description:{
         color:'#fff',
@@ -157,7 +157,7 @@ Find anything withinn 10 seconds.</h6>
               <p>Surplus produce happens because of lack of selling opportunities, loss in demand or result of overproduction. There can be a lot of surplus product available 
                   in Sri Lanka without any consumer. Without a buyer, farmers are forced to leave their produce to rot on the farm or on the excess marketplace. Food consumption forecasting is also difficult because supply and demand each other. So we are making a platform for continous demand to supply.</p>
                   <div className={classes.downBtn}>
-                <Button variant="outlined" onClick={() => { alert('clicked') }}>Download</Button>
+                <Button variant="outlined" href="https://play.google.com/store/apps" component={Link}>Download</Button>
                 </div>
           </div>
         </Grid>

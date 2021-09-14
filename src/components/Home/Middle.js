@@ -78,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="m">
-        <div className={classes.heading}>
+        <div className={classes.heading} id="middle">
             <h2>Best Marketplace For Your Organic and Surplus Harvest</h2>
         </div>
       <div className={classes.root}>

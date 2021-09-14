@@ -7,6 +7,8 @@ import { Link as Scroll } from 'react-scroll';
 import {fadeInDown} from 'react-animations';
 import styled , {keyframes} from 'styled-components';
 import Middle from './Middle';
+import Fab from '@material-ui/core/Fab';
+import UpIcon from '@material-ui/icons/KeyboardArrowUp';
 
 const Bounce = styled.div`animation: 2s  ${keyframes`${fadeInDown}`} infinite`;
 
@@ -18,6 +20,17 @@ const useStyles = makeStyles((theme) => ({
     height: '100vh',
     fontFamily: 'Nunito',
     backgroundColor: 'rgba(0, 0, 0, 0.7)',
+  },
+  fabGreen: {
+    color: theme.palette.common.white,
+    backgroundColor:  '#009900',
+    '&:hover': {
+      backgroundColor: '#009950',
+    },
+    position: 'fixed',
+    bottom: theme.spacing(2),
+    right: theme.spacing(2),
+    zIndex:'10',
   },
   overlay: {
     backgroundColor: 'rgba(0, 0, 0, 0.1)',
@@ -64,7 +77,7 @@ export default function Header() {
           <h1 className={classes.appbarTitle}>
             G<span className={classes.colorText}>rovi</span>
           </h1>
-          <IconButton component={Scroll} to="/Middle">
+          <IconButton component={Scroll} to="/Middle.js">
             <ExitToAppRoundedIcon className={classes.icon} />
           </IconButton>
         </Toolbar>
@@ -80,13 +93,18 @@ export default function Header() {
             Welcome to <br />
             G<span className={classes.colorText}>rovi</span>
           </h1>
-          <Scroll to="Middle" smooth={true}>
+          <Scroll to="middle" smooth={true}>
             <IconButton>
                 <Bounce><ExpandMoreIcon className={classes.goDown} /> </Bounce>
             </IconButton>
           </Scroll>
         </div>
       </Collapse>
+      <Scroll to="header" smooth={true}>
+        <Fab color="primary" className={classes.fabGreen}>
+          <UpIcon/>
+        </Fab>  
+      </Scroll>
     </div>
   );
 }

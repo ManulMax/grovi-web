@@ -4,11 +4,13 @@ import { AppBar, IconButton, Toolbar, Collapse } from '@material-ui/core';
 import ExitToAppRoundedIcon from '@material-ui/icons/ExitToAppRounded';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link as Scroll } from 'react-scroll';
+import {Link} from "react-router-dom";
 import {fadeInDown} from 'react-animations';
 import styled , {keyframes} from 'styled-components';
 import Middle from './Middle';
 import Fab from '@material-ui/core/Fab';
 import UpIcon from '@material-ui/icons/KeyboardArrowUp';
+import Login from '../Login/Login';
 
 const Bounce = styled.div`animation: 2s  ${keyframes`${fadeInDown}`} infinite`;
 
@@ -71,15 +73,18 @@ export default function Header() {
     setChecked(true);
   }, []);
   return (
+    
     <div className={classes.root} id="header">
       <AppBar className={classes.appbar} elevation={0}>
         <Toolbar className={classes.appbarWrapper}>
           <h1 className={classes.appbarTitle}>
             G<span className={classes.colorText}>rovi</span>
-          </h1>
-          <IconButton component={Scroll} to="/Middle.js">
+          </h1>   
+          <Link to="/login">       
+          <IconButton>
             <ExitToAppRoundedIcon className={classes.icon} />
-          </IconButton>
+          </IconButton> 
+          </Link>         
         </Toolbar>
       </AppBar>
 
@@ -106,5 +111,6 @@ export default function Header() {
         </Fab>  
       </Scroll>
     </div>
+    
   );
 }

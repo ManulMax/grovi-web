@@ -24,7 +24,7 @@ import NewuserChart from './NewuserChart';
 import TotaladsChart from './TotaladsChart';
 import Deposits from './Deposits';
 import Cards from './Cards';
-import Orders from './Orders';
+import Orders from './Orders/Orders';
 
 function Copyright() {
   return (

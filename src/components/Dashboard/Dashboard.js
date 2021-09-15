@@ -25,7 +25,6 @@ import TotaladsChart from './TotaladsChart';
 import Deposits from './Deposits';
 import Cards from './Cards';
 import Orders from './Orders';
-import Footer from '../Footer';
 
 function Copyright() {
   return (

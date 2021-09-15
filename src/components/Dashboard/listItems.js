@@ -21,36 +21,42 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Dashboard" />
     </ListItem>
+
     <ListItem button>
       <ListItemIcon>
         <ShoppingCartIcon style={{fill:'#E8E8E8'}} />
       </ListItemIcon>
       <ListItemText primary="View Orders" />
     </ListItem>
+
     <ListItem button>
       <ListItemIcon>
         <PersonAddRoundedIcon style={{fill:'#E8E8E8'}}/>
       </ListItemIcon>
       <ListItemText primary="Add Admin" />
     </ListItem>
+
     <ListItem button>
       <ListItemIcon>
         <BarChartIcon style={{fill:'#E8E8E8'}}/>
       </ListItemIcon>
       <ListItemText primary="Reports" />
     </ListItem>
+
     <ListItem button>
       <ListItemIcon>
         <WarningIcon style={{fill:'#E8E8E8'}}/>
       </ListItemIcon>
       <ListItemText primary="Complains" />
     </ListItem>
+
     <ListItem button>
       <ListItemIcon>
         <PeopleIcon style={{fill:'#E8E8E8'}}/>
       </ListItemIcon>
       <ListItemText primary="Profile" />
     </ListItem>
+    
   </div>
 );
 

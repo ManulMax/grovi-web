@@ -6,6 +6,7 @@ import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import Link from '@material-ui/core/Link';
+import {Link as Paths} from "react-router-dom";
 import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
@@ -103,6 +104,7 @@ export default function Login() {
               control={<Checkbox value="remember" style={{color:'#009900'}} />}
               label="Remember me"
             />
+            <Paths to="/dashboard">
             <Button
               type="submit"
               fullWidth
@@ -112,6 +114,7 @@ export default function Login() {
             >
               Sign In
             </Button>
+            </Paths>
             <Grid container>
               <Grid item xs>
                 <Link href="#" variant="body2">

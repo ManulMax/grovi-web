@@ -26,7 +26,7 @@ export default function Complains() {
       <Header />
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
-        Hello boooo
+        Complain Table goes here
       </main>
     </div>
   );

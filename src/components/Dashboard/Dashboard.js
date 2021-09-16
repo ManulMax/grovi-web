@@ -11,7 +11,7 @@ import Link from '@material-ui/core/Link';
 import IncomeChart from './IncomeChart';
 import NewuserChart from './NewuserChart';
 import TotaladsChart from './TotaladsChart';
-import Deposits from './Deposits';
+import Deposits from './Income';
 import Cards from './Cards';
 import HeaderDB from './Header';
 

@@ -75,6 +75,9 @@ const useStyles = makeStyles((theme) => ({
   drawerPaper: {
     backgroundColor:'#263238',
     color:'#E8E8E8',
+    '&:hover': {
+      color:'#E8E8E8',
+   },
     position: 'relative',
     whiteSpace: 'nowrap',
     width: drawerWidth,

@@ -12,10 +12,11 @@ import WarningIcon from '@material-ui/icons/Warning';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import PersonAddRoundedIcon from '@material-ui/icons/PersonAddRounded';
 import PowerSettingsNewRoundedIcon from '@material-ui/icons/PowerSettingsNewRounded';
+import { makeStyles } from '@material-ui/core';
 
 export const mainListItems = (
   <div>
-    <Link href="/dashboard">
+    <Link href="/dashboard" style={{color:'#E8E8E8', textDecoration:'none'}} >
     <ListItem button>
       <ListItemIcon>
         <DashboardIcon  style={{fill:'#E8E8E8'}}/>
@@ -24,28 +25,34 @@ export const mainListItems = (
     </ListItem>
     </Link>
 
+    <Link href="/orders" style={{color:'#E8E8E8', textDecoration:'none'}}>
     <ListItem button>
       <ListItemIcon>
         <ShoppingCartIcon style={{fill:'#E8E8E8'}} />
       </ListItemIcon>
       <ListItemText primary="View Orders" />
     </ListItem>
+    </Link>
 
+    <Link href="/add" style={{color:'#E8E8E8', textDecoration:'none'}}>
     <ListItem button>
       <ListItemIcon>
         <PersonAddRoundedIcon style={{fill:'#E8E8E8'}}/>
       </ListItemIcon>
       <ListItemText primary="Add Admin" />
     </ListItem>
+    </Link>
 
+    <Link href="/reports" style={{color:'#E8E8E8', textDecoration:'none'}}>
     <ListItem button>
       <ListItemIcon>
         <BarChartIcon style={{fill:'#E8E8E8'}}/>
       </ListItemIcon>
       <ListItemText primary="Reports" />
     </ListItem>
+    </Link>
 
-    <Link href="/complains">
+    <Link href="/complains" style={{color:'#E8E8E8', textDecoration:'none'}}>
     <ListItem button>
       <ListItemIcon>
         <WarningIcon style={{fill:'#E8E8E8'}}/>
@@ -54,13 +61,14 @@ export const mainListItems = (
     </ListItem>
     </Link>
 
+    <Link href="/profile" style={{color:'#E8E8E8', textDecoration:'none'}}>
     <ListItem button>
       <ListItemIcon>
         <PeopleIcon style={{fill:'#E8E8E8'}}/>
       </ListItemIcon>
       <ListItemText primary="Profile" />
     </ListItem>
-    
+    </Link>
   </div>
 );
 

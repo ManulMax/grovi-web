@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,21 +35,37 @@ export default function Cards() {
         <Grid item xs={6} sm={3}>
           <Paper className={classes.paper}>
           <div className={classes.fontStyle}>Total Users</div>
+          <br/>
+          <Typography component="p" variant="h3">
+            320
+          </Typography>
           </Paper>
         </Grid>
         <Grid item xs={6} sm={3}>
           <Paper className={classes.paper}>
           <div className={classes.fontStyle}>Total Ads</div> 
+          <br/>
+          <Typography component="p" variant="h3">
+            456
+          </Typography>
           </Paper>
         </Grid>
         <Grid item xs={6} sm={3}>
           <Paper className={classes.paper}>
           <div className={classes.fontStyle}>Expiring Ads</div>
+          <br/>
+          <Typography component="p" variant="h3">
+            30
+          </Typography>
           </Paper>
         </Grid>
         <Grid item xs={6} sm={3}>
           <Paper className={classes.paper}>
           <div className={classes.fontStyle}>New Ads</div>
+          <br/>
+          <Typography component="p" variant="h3">
+            79
+          </Typography>
           </Paper>
         </Grid>
       </Grid>

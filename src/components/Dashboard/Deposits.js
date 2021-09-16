@@ -12,7 +12,8 @@ function TodayDate(){
    return(
      <Typography color="textSecondary" variant="body1">
        {'On '}
-       {new Date().toLocaleDateString()}
+       {new Date().toLocaleDateString()} 
+       {/* {'from 1/'} {new Date().getMonth()}{'/'}{new Date().getFullYear()} */}
      </Typography>
    );
 }
@@ -36,7 +37,7 @@ export default function Deposits() {
       
       <div className={classes.fontStyle}>Order Revenue</div>
       <Typography component="p" variant="h4">
-        $3,024.00
+        Rs.3,024.00
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
         <TodayDate />

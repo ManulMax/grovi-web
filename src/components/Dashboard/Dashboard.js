@@ -83,7 +83,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight:'400',
   },
   drawerPaper: {
-    backgroundColor:'#004B23',
+    backgroundColor:'#263238',
     color:'#E8E8E8',
     position: 'relative',
     whiteSpace: 'nowrap',
@@ -120,7 +120,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'auto',
     flexDirection: 'column',
     '&:hover': {
-        background: "#a5d6a7",
+        background: "#cfd8dc",
         transition: "background 1s, color 1s",
      },
   },
@@ -143,8 +143,8 @@ export default function Dashboard() {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <AppBar position="absolute" className={clsx(classes.appBar, open && classes.appBarShift)}>
-        <Toolbar className={classes.toolbar} style={{backgroundColor:'#003418', color:'#E8E8E8'}}>
+      <AppBar position="absolute"  className={clsx(classes.appBar, open && classes.appBarShift)}>
+        <Toolbar className={classes.toolbar} style={{backgroundColor:'#263238', color:'#E8E8E8'}}>
           <IconButton
             edge="start"
             color="inherit"

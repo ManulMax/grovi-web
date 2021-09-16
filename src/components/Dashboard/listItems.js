@@ -15,12 +15,14 @@ import PowerSettingsNewRoundedIcon from '@material-ui/icons/PowerSettingsNewRoun
 
 export const mainListItems = (
   <div>
-    <ListItem button component={Link} href="">
+    <Link href="/dashboard">
+    <ListItem button>
       <ListItemIcon>
         <DashboardIcon  style={{fill:'#E8E8E8'}}/>
       </ListItemIcon>
       <ListItemText primary="Dashboard" />
     </ListItem>
+    </Link>
 
     <ListItem button>
       <ListItemIcon>
@@ -43,12 +45,14 @@ export const mainListItems = (
       <ListItemText primary="Reports" />
     </ListItem>
 
+    <Link href="/complains">
     <ListItem button>
       <ListItemIcon>
         <WarningIcon style={{fill:'#E8E8E8'}}/>
       </ListItemIcon>
       <ListItemText primary="Complains" />
     </ListItem>
+    </Link>
 
     <ListItem button>
       <ListItemIcon>

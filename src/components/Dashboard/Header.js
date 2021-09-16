@@ -181,51 +181,6 @@ export default function Dashboard() {
         <Divider />
         <List>{secondaryListItems}</List>
       </Drawer>
-      <main className={classes.content}>
-        <div className={classes.appBarSpacer} />
-        <Container maxWidth="lg" className={classes.container}>
-          <Grid container spacing={3}>
-            {/* Daily Order Revenue */}
-            <Grid item xs={12} md={4} lg={3}>
-              <Paper className={fixedHeightPaper}>
-                <Deposits />
-              </Paper>
-            </Grid>
-            {/* Chart */}
-            <Grid item xs={12} md={8} lg={9}>
-              <Paper className={fixedHeightPaper}>
-                <IncomeChart/>
-              </Paper>
-            </Grid>
-            {/* Recent Orders */}
-            {/* <Grid item xs={12}>
-              <Paper className={classes.paper}>
-                <Orders />
-              </Paper>
-            </Grid> */}
-          </Grid>
-          {/* card grid */}          
-            <Cards/>
-          <Grid container spacing={3}>
-            {/* new user count */}
-            <Grid item xs={12} md={6} lg={6}>
-              <Paper className={fixedHeightPaper}>
-                <NewuserChart/>
-              </Paper>
-            </Grid>
-            {/* new ad Chart */}
-            <Grid item xs={12} md={6} lg={6}>
-              <Paper className={fixedHeightPaper}>
-                <TotaladsChart/>
-              </Paper>
-            </Grid>
-          </Grid>         
-          <Box pt={4}>
-            <Copyright />
-          </Box>
-        </Container>
-
-      </main>
     </div>
   );
 }

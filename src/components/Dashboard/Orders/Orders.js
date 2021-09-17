@@ -7,6 +7,8 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Summery from './Summery';
 import OrderTable from './OrderTable';
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import PageHeader from '../../PageHeader';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,6 +24,11 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(4),
   },
+  heading:{
+    display: 'flex',
+    fontFamily: 'Nunito',
+    fontWeight:'600',
+  },
 }));
 
 export default function Orders() {
@@ -36,6 +43,13 @@ export default function Orders() {
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
+            <Grid item xs={12} sm={12}>            
+              <PageHeader
+                title="Check Recent Orders And Order Summery"
+                subTitle="Grovi Official"
+                icon={<ShoppingBasketIcon fontSize="large" />}
+              />
+            </Grid>
             <Grid item xs={12} sm={9}>
             <Paper className={classes.paper}>
                 <OrderTable/>

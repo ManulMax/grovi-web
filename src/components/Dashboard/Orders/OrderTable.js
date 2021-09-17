@@ -1,4 +1,5 @@
 import * as React from 'react';
+import SearchBar from "material-ui-search-bar";
 import { DataGrid } from '@mui/x-data-grid';
 import {
   randomCreatedDate,

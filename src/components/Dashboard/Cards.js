@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import PersonIcon from '@material-ui/icons/Person';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -11,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: 'center',
-    minHeight: '30vh',
+    minHeight: '25vh',
     color: theme.palette.text.secondary,
     '&:hover': {
         background: "#a5d6a7",
@@ -39,6 +40,10 @@ export default function Cards() {
           <Typography component="p" variant="h3">
             320
           </Typography>
+          {/* <PersonIcon/>
+          <h5>
+           Total no of users using the mobile app
+           </h5>              */}
           </Paper>
         </Grid>
         <Grid item xs={6} sm={3}>

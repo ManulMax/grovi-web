@@ -31,20 +31,20 @@ const useStyles = makeStyles(
 );
 
 const columns = [
-  { field: 'expense', headerName: 'Expense', width: 160, editable: true },
+  { field: 'expense', headerName: 'Order ID', width: 160, editable: false},
   {
     field: 'price',
     headerName: 'Price',
     type: 'number',
     width: 120,
-    editable: true,
+    editable: false,
   },
-  { field: 'dueAt', headerName: 'Due at', type: 'date', width: 160, editable: true },
+  { field: 'dueAt', headerName: 'Date', type: 'date', width: 160, editable: false },
   {
     field: 'isPaid',
-    headerName: 'Is paid?',
+    headerName: 'Is Checked?',
     type: 'boolean',
-    width: 140,
+    width: 180,
     editable: true,
   },
   {
@@ -52,14 +52,14 @@ const columns = [
     headerName: 'Paid at',
     type: 'date',
     width: 160,
-    editable: true,
+    editable: false,
   },
 ];
 
 const rows = [
   {
     id: 1,
-    expense: 'Light bill',
+    expense: 'Light',
     price: randomPrice(0, 1000),
     dueAt: new Date(2021, 6, 8),
     isPaid: false,

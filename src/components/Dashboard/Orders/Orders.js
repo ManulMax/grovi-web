@@ -6,7 +6,7 @@ import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Summery from './Summery';
-
+import OrderTable from './OrderTable';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,7 +38,7 @@ export default function Orders() {
           <Grid container spacing={3}>
             <Grid item xs={12} sm={9}>
             <Paper className={classes.paper}>
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                <OrderTable/>
             </Paper>
             </Grid>
           <Grid item xs={12} sm={3}>

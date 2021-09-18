@@ -48,7 +48,7 @@ export default function Summery() {
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>        
-          <Paper className={classes.paper}>
+          
               <div className={classes.midAlign}>
                 <h2>Order Summery Today</h2>
                 <h3><TodayDate/></h3>
@@ -64,7 +64,7 @@ export default function Summery() {
                     Download Report
                </Button>
                 </div> 
-          </Paper>
+          
       </Grid>
     </div>
   );

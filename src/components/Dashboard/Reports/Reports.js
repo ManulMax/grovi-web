@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     display: 'flex',
     overflow: 'auto',
-    flexDirection: 'column',
+    flexDirection: 'column',    
     // '&:hover': {
     //     background: "#cfd8dc",
     //     transition: "background 1s, color 1s",

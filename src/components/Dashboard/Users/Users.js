@@ -50,7 +50,7 @@ export default function Profile() {
               />
             </Grid>
           </Grid>
-          <Grid container>
+          <Grid container spacing={3}>
             <Grid item xs={12} sm={6} className={classes.userCard}>
               <ProfileCard/>
             </Grid>

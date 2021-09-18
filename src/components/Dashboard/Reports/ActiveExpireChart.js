@@ -1,56 +1,45 @@
 import React, { PureComponent } from 'react';
-import {
-  BarChart,
-  Bar,
-  Cell,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ReferenceLine,
-  ResponsiveContainer,
-} from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
   {
-    name: 'Page A',
+    name: 'Monday',
     uv: 4000,
     pv: 2400,
     amt: 2400,
   },
   {
-    name: 'Page B',
-    uv: -3000,
+    name: 'Tuesday',
+    uv: 3000,
     pv: 1398,
     amt: 2210,
   },
   {
-    name: 'Page C',
-    uv: -2000,
-    pv: -9800,
+    name: 'Wednesday',
+    uv: 2000,
+    pv: 9800,
     amt: 2290,
   },
   {
-    name: 'Page D',
+    name: 'Thursday',
     uv: 2780,
     pv: 3908,
     amt: 2000,
   },
   {
-    name: 'Page E',
-    uv: -1890,
+    name: 'Friday',
+    uv: 1890,
     pv: 4800,
     amt: 2181,
   },
   {
-    name: 'Page F',
+    name: 'Satureday',
     uv: 2390,
-    pv: -3800,
+    pv: 3800,
     amt: 2500,
   },
   {
-    name: 'Page G',
+    name: 'Sunday',
     uv: 3490,
     pv: 4300,
     amt: 2100,
@@ -58,7 +47,7 @@ const data = [
 ];
 
 export default class ActiveExpireChart extends PureComponent {
-  static demoUrl = 'https://codesandbox.io/s/bar-chart-with-positive-negative-i3b8b';
+  static demoUrl = 'https://codesandbox.io/s/simple-bar-chart-tpz8r';
 
   render() {
     return (
@@ -79,8 +68,7 @@ export default class ActiveExpireChart extends PureComponent {
           <YAxis />
           <Tooltip />
           <Legend />
-          <ReferenceLine y={0} stroke="#000" />
-          <Bar dataKey="pv" fill="#8884d8" />
+          <Bar dataKey="pv" fill="#ef5350" />
           <Bar dataKey="uv" fill="#82ca9d" />
         </BarChart>
       </ResponsiveContainer>

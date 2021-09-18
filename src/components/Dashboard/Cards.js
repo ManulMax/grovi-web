@@ -48,7 +48,7 @@ export default function Cards() {
         </Grid>
         <Grid item xs={6} sm={3}>
           <Paper className={classes.paper}>
-          <div className={classes.fontStyle}>Total Ads</div> 
+          <div className={classes.fontStyle}>Total GIGs</div> 
           <br/>
           <Typography component="p" variant="h3">
             456
@@ -57,7 +57,7 @@ export default function Cards() {
         </Grid>
         <Grid item xs={6} sm={3}>
           <Paper className={classes.paper}>
-          <div className={classes.fontStyle}>Expiring Ads</div>
+          <div className={classes.fontStyle}>Expiring GIGs</div>
           <br/>
           <Typography component="p" variant="h3">
             30
@@ -66,7 +66,7 @@ export default function Cards() {
         </Grid>
         <Grid item xs={6} sm={3}>
           <Paper className={classes.paper}>
-          <div className={classes.fontStyle}>New Ads</div>
+          <div className={classes.fontStyle}>New GIGs</div>
           <br/>
           <Typography component="p" variant="h3">
             79

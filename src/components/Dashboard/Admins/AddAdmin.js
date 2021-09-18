@@ -7,6 +7,7 @@ import PageHeader from '../../PageHeader';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import ViewTable from './ViewTable';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,6 +37,16 @@ export default function AddAdmin() {
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
+            <Grid item xs={12} sm={12}>            
+              <PageHeader
+                title="Current Registered Admins"
+                subTitle="Grovi Official"
+                icon={<PersonAddRoundedIcon  fontSize="large" />}
+              />
+            </Grid>
+            <Grid xs={12} sm={12}>
+              <ViewTable/>
+            </Grid>
             <Grid item xs={12} sm={12}>            
               <PageHeader
                 title="Add Admin To Grovi Web"

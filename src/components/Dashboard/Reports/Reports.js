@@ -6,8 +6,9 @@ import BarChartIcon from '@material-ui/icons/BarChart';
 import PageHeader from '../../PageHeader';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
+import clsx from 'clsx';
 import Grid from '@material-ui/core/Grid';
-
+import ActiveExpireChart from './ActiveExpireChart';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Reports() {
   const classes = useStyles();
   console.log("blaa")
-
+  const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -43,6 +44,14 @@ export default function Reports() {
                 subTitle="Grovi Official"
                 icon={<BarChartIcon  fontSize="large" />}
               />
+            </Grid>
+            <Grid itemxs={12} md={6} lg={6}>
+              <Paper className={fixedHeightPaper}>
+                <ActiveExpireChart/>
+              </Paper>
+            </Grid>
+            <Grid xs={12} md={6} lg={6}>
+              <ActiveExpireChart/>
             </Grid>
         </Grid>
         </Container>

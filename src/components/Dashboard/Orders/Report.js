@@ -7,6 +7,11 @@ import Paper from '@material-ui/core/Paper';
 import clsx from 'clsx';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
+import { Page, Text, View, Document, StyleSheet, PDFViewer} from '@react-pdf/renderer';
+import ReactDOM from "react-dom";
+import Pdf from "react-to-pdf";
+import MostSellChart from '../Reports/MostSellCategory';
+import OrderTable from './OrderTable';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,24 +41,45 @@ const useStyles = makeStyles((theme) => ({
     height: '55vh',
   },
 }));
+  
+const ref = React.createRef();
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <Pdf targetRef={ref} filename="code-example.pdf">
+//         {({ toPdf }) => <button onClick={toPdf}>Generate Pdf</button>}
+//       </Pdf>
+//       <div ref={ref}>
+//         <h1>Hello CodeSandbox</h1>
+//         <h2>Start editing to see some magic happen!</h2>
+//       </div>
+//     </div>
+//   );
+// }
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<OrderReport />, rootElement);
 
 export default function OrderReport() {
   const classes = useStyles();
-  console.log("blaa")
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
   return (
-    <div className={classes.root}>
-      <CssBaseline />
-      <main className={classes.content}>
-        <div className={classes.appBarSpacer} />
-        <Container maxWidth="lg" className={classes.container}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} sm={6}>            
-                <Button variant="contained" style={{backgroundColor:'#009900', color:'#fff'}}>Contained</Button>
-            </Grid>       
-          </Grid>
-         </Container>
-      </main>
+    <div className="App">
+      <Pdf targetRef={ref} filename="code-example.pdf">
+        {({ toPdf }) => <button onClick={toPdf}>Generate Pdf</button>}
+      </Pdf>
+      <div ref={ref}>
+        <h1>Hello CodeSandbox</h1>
+        <h2>Start editing to see some magic happen!</h2>
+        {/* <MostSellChart/>
+        <OrderTable/> */}
+      </div>
     </div>
   );
 }
+
+
+
+
+

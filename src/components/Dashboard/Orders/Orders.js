@@ -13,7 +13,6 @@ import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import StoreIcon from '@material-ui/icons/Store';
 import PaymentIcon from '@material-ui/icons/Payment';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
-import OrderReport from './Report';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -93,9 +92,7 @@ export default function Orders() {
               </Grid>
           </Grid>
           <Grid container spacing={3}>
-            <Grid item xs={6} sa={4}>
-              {/* <OrderReport/> */}
-            </Grid>
+
           </Grid>
         </Container>
       </main>

@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     minHeight: '25vh',
     color: theme.palette.text.secondary,
     '&:hover': {
-        background: "#a5d6a7",
+        background: "#cfd8dc",
         transition: "background 1s, color 1s",
      },
   },

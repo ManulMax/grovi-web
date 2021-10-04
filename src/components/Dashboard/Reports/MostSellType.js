@@ -78,7 +78,7 @@ export default class MostSellType extends PureComponent {
             cy="50%"
             innerRadius={60}
             outerRadius={80}
-            fill="#3f51b5"
+            fill="green"
             dataKey="value"
             onMouseEnter={this.onPieEnter}
           />

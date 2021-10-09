@@ -25,7 +25,7 @@ const useStyles = makeStyles({
   fontStyle:{
     fontFamily: 'Nunito',
     fontWeight:'600',
-    fontSize:'1.5rem',
+    fontSize:'1.7rem',
     color:'#1a237e',
   }
 });

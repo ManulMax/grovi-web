@@ -60,6 +60,7 @@ export default function Team() {
     </div>
     </Container>
 <br/>
+        <br/>
   </React.Fragment>
 
   );

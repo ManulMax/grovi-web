@@ -46,8 +46,8 @@ export default function ProfileCard() {
             </Card>
             <div className={classes.userdata}>
                 <h3>User Name :</h3>
-                <h3>e-mail    :</h3>
-                <h3>Telephone :</h3>
+                <h3>E-mail    :</h3>
+                <h3>Telephone No :</h3>
                 <h3>Added Date:</h3>
                 <h3>Status    : Admin</h3>
             </div>

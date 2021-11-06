@@ -59,6 +59,8 @@ export default function Team() {
       <Avatar alt="Manul" src={process.env.PUBLIC_URL + '../assets/manul.jpg'}  className={classes.large} />
     </div>
     </Container>
+<br/>
+        <br/>
   </React.Fragment>
 
   );
